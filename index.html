@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Akatsuki Gang</title>
+
+    <style>
+        @font-face {
+            font-family: NinjaLine;
+            src: url(./src/fonte/NinjaLine.ttf);
+        }
+    </style>   
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oxanium:wght@300;400;700&display=swap" rel="stylesheet">
+   
+
+    <link rel="icon" type="imagem.png" href="./src/imagens/png/akatsuki-logo480.svg">
+    <link rel="stylesheet" href="./src/css/reset.css">
+    <link rel="stylesheet" href="./src/css/estilos.css">
+    <link rel="stylesheet" href="./src/css/responsivo.css">
+    <link rel="stylesheet" href="./src/css/scrollbar.css">
+
+</head>
+<body>
+      <header class="cabecalho">
+        <img height = "152" width= "296" class="logo" src="./src/imagens/png/akatsuki-logo480.svg" alt="Logo Akatsuki">
+      </header>
+
+    <main class="selecao-de-personagens">
+        <section class="personagens">
+            <h1 class="titulo"> Escolha o seu RENEGADO!</h1>
+            <ul class="lista-de-personagens">
+
+                <li class="personagem selecionado" id="nagato" data-name="Pain/Nagato" data-description="'Nós somos apenas simples pessoas movidas pela vingança em nome da justiça. Mas se a vingança é chamada de justiça, então dessa justiça irá nascer ainda mais vingança... E então se torna uma corrente de ódio. Viver com isso, ciente do passado, predizando o futuro, isso que significa conhecer a história. Não podemos evitar, mas sim entender, que as pessoas nunca entenderão uma as outras.'">
+                    <img src="./src/imagens/jpg/nagato-card.jpg" alt="Personagem Pain/Nagato">
+                </li>
+
+                <li class="personagem" id="konan" data-name="Konan" data-description="'A vontade de Yahiko e Nagato não desapareceu deste mundo! Eu também acredito no Naruto! Ele se tornará a ponte que nos guiará até a paz! E eu serei o suporte que segurará a ponte!'">
+                    <img src="./src/imagens/jpg/konan-card.jpg" alt="Personagem Konan">
+                </li>
+
+                <li class="personagem" id="kisame" data-name="Hoshigaki Kisame" data-description="'Tubarões começam como ovos, mas são incubados e chocados no útero. Às vezes o número de crias que é menor do que o número de ovos que foram fertilizados. Você sabe por quê? Canibalismo. Os filhotes começam a comer uns aos outros dentro do útero da mãe no momento em que se chocam. Eles começam a matar os seus irmãos no momento em que devem entrar no mundo, considerando tudo o que veem como nada mais do que presas. A partir de hoje você e eu somos colegas da Akatsuki. Portanto, tenha cuidado ... comigo.'"> 
+                    <img src="./src/imagens/jpg/kisame-card.jpg" alt="Personagem Hoshigaki Kisame">
+                </li>
+                
+                <li class="personagem" id="itachi" data-name="Uchiha Itachi" data-description="'Não importa o quão poderoso você se torne nunca tente fazer tudo sozinho, caso contrario ira falhar.'">
+                    <img src="./src/imagens/jpg/itachi-card.jpg" alt="Personagem Uchiha Itachi">
+                </li>
+
+                <li class="personagem" id="kakuzu" data-name="Kakuzu" data-description="'Mesmo no inferno o dinheiro tem importância!' 'Olhar para o seu protetor de testa me lembra o primeiro shinobi de Konoha que eu lutei ... o Primeiro Hokage.'">
+                    <img src="./src/imagens/jpg/kakuzu-card.jpg" alt="Personagem Kakuzu">
+                </li>
+
+                <li class="personagem" id="hidan" data-name="Hidan" data-description="'Eu nunca vou morrer ... Mesmo se você destruir o meu corpo, e eu estou à esquerda com nada, mas minha cabeça ... Eu vou escapar de alguma forma ... e quando eu faço, eu vou encontrá-lo e morder sua garganta!'">
+                    <img src="./src/imagens/jpg/hidan-card.jpg" alt="Personagem Hidan">
+                </li>
+
+                <li class="personagem" id="tobi" data-name="Uchiha Obito/Tobi" data-description="'Aqueles que quebram as regras são lixo, mas aqueles que abandonam os seus camaradas são piores que lixo! Se eu vou ser chamado de lixo de qualquer maneira, prefiro quebrar as regras! E se isso de alguma forma me faz não ser um shinobi de verdade, então eu vou acabar com esse conceito de shinobi!'">
+                    <img src="./src/imagens/jpg/tobi-card.jpg" alt="Personagem Uchiha Obito/Tobi">
+                </li>
+
+                <li class="personagem" id="deidara" data-name="Deidara" data-description="'Olhe para os tolos. Eles não têm apreço pela arte. Você tem que sentir a arte. E a verdadeira arte ... é uma EXPLOSÃO!'">
+                    <img src="./src/imagens/jpg/deidara-card.jpg" alt="Personagem Deidara">
+                </li>
+
+                <li class="personagem" id="sasori" data-name="Sasori" data-description="'Eu me descreveria como um ser humano que não poderia se tornar um fantoche completo, eu sou um fantoche inacabado, cujo quadro sem vida ainda contém um coração batendo em seu núcleo. Não sou nem morto, nem estou vivo.'">
+                    <img src="./src/imagens/jpg/sasori-card.jpg" alt="Personagem Sasori">
+                </li>
+            </ul>
+        </section>
+        <section class="personagem-selecionado">
+            <img class="personagem-grande" src="src/imagens/png/nagato.png" alt="Personagem Selecionado">
+
+            <div class="informacoes-personagem">
+                <h2 class="nome-personagem" id="nome-personagem">Pain/Nagato</h2>
+                <p class="descricao-personagem" id="descricao-personagem">'Nós somos apenas simples pessoas movidas pela vingança em nome da justiça. Mas se a vingança é chamada de justiça, então dessa justiça irá nascer ainda mais vingança... E então se torna uma corrente de ódio. Viver com isso, ciente do passado, predizando o futuro, isso que significa conhecer a história. Não podemos evitar, mas sim entender, que as pessoas nunca entenderão uma as outras.'</p>
+            </div>
+        </section>
+    </main>
+    <script src="./src/js/index.js"></script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
